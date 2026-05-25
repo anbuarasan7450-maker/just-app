@@ -1,0 +1,15 @@
+name: build apk
+
+on:
+ push:
+   runs on: ubuntu latest
+
+   steps:
+     name: checkout code
+     uses: actions/checkoutv3
+
+     name:build with buildozer
+     uses:
+ArtemSBulgakov/buildozer action@v1
+      with:
+        command: buildozer android debug
