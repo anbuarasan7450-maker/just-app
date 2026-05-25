@@ -1,0 +1,4 @@
+kivy==2.2.1
+pyrebase4==0.7.1
+requests==2.31.0
+cython==0.29.36
